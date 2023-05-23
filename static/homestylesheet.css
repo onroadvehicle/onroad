@@ -1,0 +1,302 @@
+.time{background-color:(#34ebba);}
+#banner{
+	background:url('banner.jpg');
+	background-size:cover;
+	background-position:center;
+	padding:100px;
+	
+}
+
+
+
+
+.road{margin-top:200px;}
+
+
+
+#contact{
+    background:url('tow.jpg');
+    background-size:cover;
+    background-position:center; 
+
+}
+#contact{
+    background:rgba(0,0,0,0.5);
+    
+}
+
+
+
+
+#myCarousel4 {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+}
+
+
+
+
+
+
+
+#myCarouse5 {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+}
+
+#car{
+	background:url('car1.jpg');
+	background-size:cover;
+	background-position:center;
+	padding:100px;
+	
+}
+
+#car>.col-md-12{
+	background:rgba(0,0,0,10);
+	padding:100px;
+}
+ 
+.card-img-overlay{margin-top:150px;}
+
+
+.start{padding-left:100px;
+           margin-top:100px;}
+           #admin{
+            background:url('a1.jpeg');
+            background-size:cover;
+            background-position:center;
+            margin-bottom:300px;
+            
+            
+            
+        }
+        #admin>.col-md-12{
+            background:rgba(0,0,0,0.5);
+            padding:100px;
+        }
+        
+        .login{ margin-top:100px;
+                margin-bottom:100px;
+        
+            background:rgba(0,0,0,0.5);
+            padding:100px;
+        }
+        
+        
+        
+        .end{margin-bottom:100px;
+              
+           }
+         .icon{margin-top:300px;}  
+
+         .form1{margin-bottom: 300px;
+        }
+        #contact{
+            background:url('tow.jpg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+            
+        }
+        #contact>.col-md-12{
+            background:rgba(0,0,0,0.7);
+            padding:50px;
+            
+        }
+
+        #image1{
+            background:url('repair.jpg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+        }
+        #image1>.col-md-6{
+            background:rgba(0,0,0,0.7);
+            padding:100px;
+        }
+        #image2{
+            background:url('kp.jpg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+        }
+        #image2>.col-md-6{
+            background:rgba(0,0,0,0.7);
+            padding:100px;
+        }
+        #icons{
+            background:url('az.jpg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+        }
+
+        #b1{
+            background:url('420.jpg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+            
+        }
+        #b1>.col-md-12{
+            background:rgba(0,0,0,0.9);
+            padding:100px;
+        }
+        #qr{transform:top;
+
+
+
+        }
+        #qr:hover{
+
+            transform:top;
+            
+        }
+        #service2{
+            background:url('az.jpg');
+            background-size:cover;
+            background-position:center;
+            
+            
+        }
+        #service2>.col-md-12{
+            background:rgba(0,0,0,0.7);
+            padding:100px;
+        }
+        .service3{font-size:70px;
+        }
+        #blogs{
+            background:url('px.jpeg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+            
+        }
+        #blogs>.col-md-12{
+            background:rgba(0,0,0,0.7);
+            padding:50px;
+            
+        }
+        #gellary{
+            background:url('32.jpeg');
+            background-size:cover;
+            background-position:center;
+            
+            
+            
+            
+            
+        }
+        #gellary>.col-md-12{
+            background:rgba(0,0,0,0.7);
+            padding:50px;
+            
+        }
+        #nav a {color: white;
+        }
+        #nav a:hover{
+            color: red;
+        }

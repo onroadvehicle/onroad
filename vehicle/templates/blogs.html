@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+  <div class="col-md-12 mt-4">
+
+   <h1 class="text-center fw-bold mt-4 mb-4">OUR LATEST BLOGS</h1> 
+  </div>
+
+  {% for b in blg %}
+  <div class="col-md-4 mt-4">
+    <a href="/blogdetail/{{b.id}}" class="text-decoration-none text-info mb-4">
+      <h4 class="mt-4">{{ b.tittle }}</h4>
+      <img src="/media/{{b.photo}}" width="400px" height="200px" class="mt-4"/>
+   
+      <p class="text-dark mt-2 fw-bold">{{b.postby}} ({{b.poston}})</p>
+    </a>
+    
+
+  </div>
+  {% endfor %}
+
+
+</div>
+
+{% endblock %}

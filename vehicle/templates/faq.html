@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row " id="contact">
+      <div class="col-md-12  mt-5">
+        <h1 class="text-white fw-bold">FREQUANTLY ASK QUESTION</h1>
+          <p class="text-white"> If you're stranded with a vehicle that needs to be towed, we've got you covered.  </p>
+    </div>
+    </div>
+</div>
+
+
+<div class="row mt-5">
+  <div class="col-md-12">
+      <div class="row">
+  <div class="col-md-5 offset-1 mt-5">
+     <p class="text-info fw-bold"> HOW CAN WE HELP YOU?</p>
+     <h1>Have a Questions?</h1>
+     <h4 class="mt-5 fw-bold">Our Top Questions</h4>
+
+
+     <div class="accordion accordion-flush" id="accordionFlushExample">
+      {% for fq in f %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading{{ fq.id }}">
+          <button class="accordion-button collapsed text-info fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ fq.id }}" aria-expanded="false" aria-controls="flush-collapseOne">
+            {{ fq.question }}
+          </button>
+        </h2>
+        <div id="flush-collapse{{ fq.id }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ fq.id }}" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">{{ fq.answer }}</div>
+        </div>
+      </div>
+      {% endfor %}
+     
+    </div>
+
+     <!--<nav>
+      <ul class="nav ">
+
+          
+      
+  <i class="fa-sharp fa-solid fa-square-question"></i>  
+  <li><a href="" class="nav-link text-info fw-bold"><i class="fa-quetion text-info fs-5"></i><span><h5>How can i subscribe to car's open Road Magazine?</h5></span></a></li><br><br>
+  <li><a href="" class="nav-link text-info fw-bold"><i class="fa-quation text-info fs-5"></i><span><h5> Can i purchase a right-hand-drive car?</h5></span></a></li><br><br>
+  <li><a href="" class="nav-link text-info fw-bold"><i class="fa-quation text-info fs-5"></i><span><h5>Can i get a price quoted on a new carvia the internet?</h5></span></a></li><br>
+  <li><a href="" class="nav-link text-info fw-bold"><i class="fa-quation text-info fs-5"></i><span><h5>When can i purchase genuine car parts and accessories?</h5></span></a></li><br>
+  <li><a href="" class="nav-link text-info fw-bold"><i class="fa-quation text-info fs-5"></i><span><h5>Can i purchase cars for my fleet?</h5></span></a></li>
+</ul>
+  </nav>-->
+  </div>
+  <div class="col-md-6">
+      <div class="card-img">
+          <img src="{% static 'ph.jpg' %}">
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

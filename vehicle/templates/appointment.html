@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row mt-5 mb-5 ">
+
+    <div class="col-md-5 offset-3 bg-info">
+        <h3 class="text-center text-light mb-4 mt-4">Request Service</h3>
+
+
+        <form action="/insertappointment/" method="post">
+            {% csrf_token %}
+            <label>name</label><br>
+            <input type="text" class="form-control" placeholder="name" name="name"><br>
+            <label>Location*</label><br>
+            <input type="text" class="form-control" placeholder="Location" name="location"><br>
+            <label>Mobile NO.*</label><br>
+            <input type="text" class="form-control" placeholder="Mobile no." name="mobile" /><br>
+            <label>Vehicle type</label><br>
+            <select class="form-control" name="vehicletype">
+                <option value="">-Select Vehicle-</option>
+                <option>Car</option>
+                <option>Bike</option>
+                <option>Scooter</option>
+                <option>Truck</option>
+                <option>Auto</option>
+                <option>Bus</option>
+            </select><br>
+            <label>vehicle number</label><br>
+            <input type="text" class="form-control" placeholder="vehicle number" name="vehiclenumber"><br>
+            <label>Vehicle services</label><br>
+            <select class="form-control" name="vehicleservices">
+                <option value="">-vehicle services-</option>
+                <option>change tyre</option>
+                <option>change wheels</option>
+                <option>Engine work</option>
+                <option>oil change</option>
+                
+            </select><br>
+            <textarea class="form-control" name="message"  rows="6" placeholder="Message"></textarea>
+            <!--<button  class="btn btn-info">Send Message</button>-->
+            <button class="btn btn-danger mt-5">Submit</button>
+           
+        </form>
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

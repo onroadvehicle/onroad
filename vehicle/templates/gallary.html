@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="row " id="gellary">
+      <div class="col-md-12">
+        <h1 class="text-white fw-bold">GALLERY VIEW1 W/L/SIDEBAR</h1>
+          <p class="text-white"> If you're stranded with a vehicle that needs to be towed, we've got you covered.</p>
+    </div>
+    </div>
+</div>
+
+   
+
+    <div class="row" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+    {% for g in gal %}
+      <div class="col-md-4 p-5">
+        <img src="/media/{{ g.photos }}"class="w-100" style="height:200px">
+      </div>
+      {% endfor %}
+      
+    </div>
+  
+  
+  {% endblock %}
